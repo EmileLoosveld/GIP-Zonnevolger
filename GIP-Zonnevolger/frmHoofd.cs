@@ -17,5 +17,14 @@ namespace GIP_Zonnevolger
             InitializeComponent();
         }
 
+        private void rdbAutomatisch_CheckedChanged(object sender, EventArgs e)
+        {
+            grpBesturing.Enabled = false;
+        }
+
+        private void rdbManueel_CheckedChanged(object sender, EventArgs e)
+        {
+            grpBesturing.Enabled = true;
+        }
     }
 }
