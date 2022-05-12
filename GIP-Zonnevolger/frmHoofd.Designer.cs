@@ -30,232 +30,49 @@ namespace GIP_Zonnevolger
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHoofd));
-            this.pnlOpties = new System.Windows.Forms.Panel();
-            this.grpVeiligheid = new System.Windows.Forms.GroupBox();
-            this.btnVeiligheidsstand = new System.Windows.Forms.Button();
-            this.grpGevoeligheid = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtGevoeligheidswaarde = new System.Windows.Forms.TextBox();
-            this.grpInformatie = new System.Windows.Forms.GroupBox();
-            this.grpWindsnelheid = new System.Windows.Forms.GroupBox();
-            this.grpSpanningen = new System.Windows.Forms.GroupBox();
-            this.lblV4 = new System.Windows.Forms.Label();
-            this.lblV3 = new System.Windows.Forms.Label();
-            this.lblV2 = new System.Windows.Forms.Label();
-            this.lblV = new System.Windows.Forms.Label();
-            this.lblWestWaarde = new System.Windows.Forms.Label();
-            this.lblOostWaarde = new System.Windows.Forms.Label();
-            this.lblZuidWaarde = new System.Windows.Forms.Label();
-            this.lblNoordWaarde = new System.Windows.Forms.Label();
-            this.lblWest = new System.Windows.Forms.Label();
-            this.lblOost = new System.Windows.Forms.Label();
-            this.lblZuid = new System.Windows.Forms.Label();
-            this.lblNoord = new System.Windows.Forms.Label();
-            this.grpTijdBeweging = new System.Windows.Forms.GroupBox();
-            this.lblTijd2 = new System.Windows.Forms.Label();
-            this.lblTijd = new System.Windows.Forms.Label();
-            this.txtTijd = new System.Windows.Forms.TextBox();
+            this.bgWorkerOntvang = new System.ComponentModel.BackgroundWorker();
             this.grpWerking = new System.Windows.Forms.GroupBox();
             this.rdbAutomatisch = new System.Windows.Forms.RadioButton();
             this.rdbManueel = new System.Windows.Forms.RadioButton();
-            this.pnlBesturing = new System.Windows.Forms.Panel();
+            this.txtIPadr = new System.Windows.Forms.MaskedTextBox();
+            this.grpInformatie = new System.Windows.Forms.GroupBox();
+            this.lblOostWaarde = new System.Windows.Forms.Label();
+            this.lblWestWaarde = new System.Windows.Forms.Label();
+            this.lblNoord = new System.Windows.Forms.Label();
+            this.lblNoordWaarde = new System.Windows.Forms.Label();
+            this.lblWest = new System.Windows.Forms.Label();
+            this.lblZuidWaarde = new System.Windows.Forms.Label();
+            this.lblOost = new System.Windows.Forms.Label();
+            this.lblZuid = new System.Windows.Forms.Label();
+            this.txtPoortnr = new System.Windows.Forms.TextBox();
+            this.btnZoekServer = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.grpVeiligheid = new System.Windows.Forms.GroupBox();
+            this.btnVeiligheidsstand = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.grpBesturing = new System.Windows.Forms.GroupBox();
             this.btnZuid = new System.Windows.Forms.Button();
             this.btnNoord = new System.Windows.Forms.Button();
             this.btnWest = new System.Windows.Forms.Button();
             this.btnOost = new System.Windows.Forms.Button();
+            this.pnlOpties = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.instellingenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectionsettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlAfbeelding = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnZoekServer = new System.Windows.Forms.Button();
-            this.txtPoortnr = new System.Windows.Forms.TextBox();
-            this.txtIPadr = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bgWorkerOntvang = new System.ComponentModel.BackgroundWorker();
-            this.pnlOpties.SuspendLayout();
-            this.grpVeiligheid.SuspendLayout();
-            this.grpGevoeligheid.SuspendLayout();
-            this.grpInformatie.SuspendLayout();
-            this.grpSpanningen.SuspendLayout();
-            this.grpTijdBeweging.SuspendLayout();
             this.grpWerking.SuspendLayout();
-            this.pnlBesturing.SuspendLayout();
+            this.grpInformatie.SuspendLayout();
+            this.grpVeiligheid.SuspendLayout();
             this.grpBesturing.SuspendLayout();
+            this.pnlOpties.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.pnlAfbeelding.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlOpties
+            // bgWorkerOntvang
             // 
-            this.pnlOpties.Controls.Add(this.grpVeiligheid);
-            this.pnlOpties.Controls.Add(this.grpGevoeligheid);
-            this.pnlOpties.Controls.Add(this.grpInformatie);
-            this.pnlOpties.Controls.Add(this.grpTijdBeweging);
-            this.pnlOpties.Controls.Add(this.grpWerking);
-            resources.ApplyResources(this.pnlOpties, "pnlOpties");
-            this.pnlOpties.Name = "pnlOpties";
-            // 
-            // grpVeiligheid
-            // 
-            resources.ApplyResources(this.grpVeiligheid, "grpVeiligheid");
-            this.grpVeiligheid.Controls.Add(this.btnVeiligheidsstand);
-            this.grpVeiligheid.Name = "grpVeiligheid";
-            this.grpVeiligheid.TabStop = false;
-            // 
-            // btnVeiligheidsstand
-            // 
-            resources.ApplyResources(this.btnVeiligheidsstand, "btnVeiligheidsstand");
-            this.btnVeiligheidsstand.Name = "btnVeiligheidsstand";
-            this.btnVeiligheidsstand.UseVisualStyleBackColor = true;
-            this.btnVeiligheidsstand.Click += new System.EventHandler(this.btnVeiligheidsstand_Click);
-            // 
-            // grpGevoeligheid
-            // 
-            resources.ApplyResources(this.grpGevoeligheid, "grpGevoeligheid");
-            this.grpGevoeligheid.Controls.Add(this.label3);
-            this.grpGevoeligheid.Controls.Add(this.label1);
-            this.grpGevoeligheid.Controls.Add(this.label2);
-            this.grpGevoeligheid.Controls.Add(this.txtGevoeligheidswaarde);
-            this.grpGevoeligheid.Name = "grpGevoeligheid";
-            this.grpGevoeligheid.TabStop = false;
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // txtGevoeligheidswaarde
-            // 
-            resources.ApplyResources(this.txtGevoeligheidswaarde, "txtGevoeligheidswaarde");
-            this.txtGevoeligheidswaarde.Name = "txtGevoeligheidswaarde";
-            // 
-            // grpInformatie
-            // 
-            resources.ApplyResources(this.grpInformatie, "grpInformatie");
-            this.grpInformatie.Controls.Add(this.grpWindsnelheid);
-            this.grpInformatie.Controls.Add(this.grpSpanningen);
-            this.grpInformatie.Name = "grpInformatie";
-            this.grpInformatie.TabStop = false;
-            // 
-            // grpWindsnelheid
-            // 
-            resources.ApplyResources(this.grpWindsnelheid, "grpWindsnelheid");
-            this.grpWindsnelheid.Name = "grpWindsnelheid";
-            this.grpWindsnelheid.TabStop = false;
-            // 
-            // grpSpanningen
-            // 
-            this.grpSpanningen.Controls.Add(this.lblV4);
-            this.grpSpanningen.Controls.Add(this.lblV3);
-            this.grpSpanningen.Controls.Add(this.lblV2);
-            this.grpSpanningen.Controls.Add(this.lblV);
-            this.grpSpanningen.Controls.Add(this.lblWestWaarde);
-            this.grpSpanningen.Controls.Add(this.lblOostWaarde);
-            this.grpSpanningen.Controls.Add(this.lblZuidWaarde);
-            this.grpSpanningen.Controls.Add(this.lblNoordWaarde);
-            this.grpSpanningen.Controls.Add(this.lblWest);
-            this.grpSpanningen.Controls.Add(this.lblOost);
-            this.grpSpanningen.Controls.Add(this.lblZuid);
-            this.grpSpanningen.Controls.Add(this.lblNoord);
-            resources.ApplyResources(this.grpSpanningen, "grpSpanningen");
-            this.grpSpanningen.Name = "grpSpanningen";
-            this.grpSpanningen.TabStop = false;
-            // 
-            // lblV4
-            // 
-            resources.ApplyResources(this.lblV4, "lblV4");
-            this.lblV4.Name = "lblV4";
-            // 
-            // lblV3
-            // 
-            resources.ApplyResources(this.lblV3, "lblV3");
-            this.lblV3.Name = "lblV3";
-            // 
-            // lblV2
-            // 
-            resources.ApplyResources(this.lblV2, "lblV2");
-            this.lblV2.Name = "lblV2";
-            // 
-            // lblV
-            // 
-            resources.ApplyResources(this.lblV, "lblV");
-            this.lblV.Name = "lblV";
-            // 
-            // lblWestWaarde
-            // 
-            resources.ApplyResources(this.lblWestWaarde, "lblWestWaarde");
-            this.lblWestWaarde.Name = "lblWestWaarde";
-            // 
-            // lblOostWaarde
-            // 
-            resources.ApplyResources(this.lblOostWaarde, "lblOostWaarde");
-            this.lblOostWaarde.Name = "lblOostWaarde";
-            // 
-            // lblZuidWaarde
-            // 
-            resources.ApplyResources(this.lblZuidWaarde, "lblZuidWaarde");
-            this.lblZuidWaarde.Name = "lblZuidWaarde";
-            // 
-            // lblNoordWaarde
-            // 
-            resources.ApplyResources(this.lblNoordWaarde, "lblNoordWaarde");
-            this.lblNoordWaarde.Name = "lblNoordWaarde";
-            // 
-            // lblWest
-            // 
-            resources.ApplyResources(this.lblWest, "lblWest");
-            this.lblWest.Name = "lblWest";
-            // 
-            // lblOost
-            // 
-            resources.ApplyResources(this.lblOost, "lblOost");
-            this.lblOost.Name = "lblOost";
-            // 
-            // lblZuid
-            // 
-            resources.ApplyResources(this.lblZuid, "lblZuid");
-            this.lblZuid.Name = "lblZuid";
-            // 
-            // lblNoord
-            // 
-            resources.ApplyResources(this.lblNoord, "lblNoord");
-            this.lblNoord.Name = "lblNoord";
-            // 
-            // grpTijdBeweging
-            // 
-            resources.ApplyResources(this.grpTijdBeweging, "grpTijdBeweging");
-            this.grpTijdBeweging.Controls.Add(this.lblTijd2);
-            this.grpTijdBeweging.Controls.Add(this.lblTijd);
-            this.grpTijdBeweging.Controls.Add(this.txtTijd);
-            this.grpTijdBeweging.Name = "grpTijdBeweging";
-            this.grpTijdBeweging.TabStop = false;
-            // 
-            // lblTijd2
-            // 
-            resources.ApplyResources(this.lblTijd2, "lblTijd2");
-            this.lblTijd2.Name = "lblTijd2";
-            // 
-            // lblTijd
-            // 
-            resources.ApplyResources(this.lblTijd, "lblTijd");
-            this.lblTijd.Name = "lblTijd";
-            // 
-            // txtTijd
-            // 
-            resources.ApplyResources(this.txtTijd, "txtTijd");
-            this.txtTijd.Name = "txtTijd";
+            this.bgWorkerOntvang.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorkerOntvang_DoWork);
+            this.bgWorkerOntvang.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorkerOntvang_RunWorkerCompleted);
             // 
             // grpWerking
             // 
@@ -281,19 +98,108 @@ namespace GIP_Zonnevolger
             this.rdbManueel.UseVisualStyleBackColor = true;
             this.rdbManueel.CheckedChanged += new System.EventHandler(this.rdbManueel_CheckedChanged);
             // 
-            // pnlBesturing
+            // txtIPadr
             // 
-            this.pnlBesturing.Controls.Add(this.grpBesturing);
-            resources.ApplyResources(this.pnlBesturing, "pnlBesturing");
-            this.pnlBesturing.Name = "pnlBesturing";
+            resources.ApplyResources(this.txtIPadr, "txtIPadr");
+            this.txtIPadr.Name = "txtIPadr";
+            // 
+            // grpInformatie
+            // 
+            resources.ApplyResources(this.grpInformatie, "grpInformatie");
+            this.grpInformatie.Controls.Add(this.lblOostWaarde);
+            this.grpInformatie.Controls.Add(this.lblWestWaarde);
+            this.grpInformatie.Controls.Add(this.lblNoord);
+            this.grpInformatie.Controls.Add(this.lblNoordWaarde);
+            this.grpInformatie.Controls.Add(this.lblWest);
+            this.grpInformatie.Controls.Add(this.lblZuidWaarde);
+            this.grpInformatie.Controls.Add(this.lblOost);
+            this.grpInformatie.Controls.Add(this.lblZuid);
+            this.grpInformatie.Name = "grpInformatie";
+            this.grpInformatie.TabStop = false;
+            // 
+            // lblOostWaarde
+            // 
+            resources.ApplyResources(this.lblOostWaarde, "lblOostWaarde");
+            this.lblOostWaarde.Name = "lblOostWaarde";
+            // 
+            // lblWestWaarde
+            // 
+            resources.ApplyResources(this.lblWestWaarde, "lblWestWaarde");
+            this.lblWestWaarde.Name = "lblWestWaarde";
+            // 
+            // lblNoord
+            // 
+            resources.ApplyResources(this.lblNoord, "lblNoord");
+            this.lblNoord.Name = "lblNoord";
+            // 
+            // lblNoordWaarde
+            // 
+            resources.ApplyResources(this.lblNoordWaarde, "lblNoordWaarde");
+            this.lblNoordWaarde.Name = "lblNoordWaarde";
+            // 
+            // lblWest
+            // 
+            resources.ApplyResources(this.lblWest, "lblWest");
+            this.lblWest.Name = "lblWest";
+            // 
+            // lblZuidWaarde
+            // 
+            resources.ApplyResources(this.lblZuidWaarde, "lblZuidWaarde");
+            this.lblZuidWaarde.Name = "lblZuidWaarde";
+            // 
+            // lblOost
+            // 
+            resources.ApplyResources(this.lblOost, "lblOost");
+            this.lblOost.Name = "lblOost";
+            // 
+            // lblZuid
+            // 
+            resources.ApplyResources(this.lblZuid, "lblZuid");
+            this.lblZuid.Name = "lblZuid";
+            // 
+            // txtPoortnr
+            // 
+            resources.ApplyResources(this.txtPoortnr, "txtPoortnr");
+            this.txtPoortnr.Name = "txtPoortnr";
+            // 
+            // btnZoekServer
+            // 
+            resources.ApplyResources(this.btnZoekServer, "btnZoekServer");
+            this.btnZoekServer.Name = "btnZoekServer";
+            this.btnZoekServer.UseVisualStyleBackColor = true;
+            this.btnZoekServer.Click += new System.EventHandler(this.btnZoekServer_Click);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // grpVeiligheid
+            // 
+            resources.ApplyResources(this.grpVeiligheid, "grpVeiligheid");
+            this.grpVeiligheid.Controls.Add(this.btnVeiligheidsstand);
+            this.grpVeiligheid.Name = "grpVeiligheid";
+            this.grpVeiligheid.TabStop = false;
+            // 
+            // btnVeiligheidsstand
+            // 
+            resources.ApplyResources(this.btnVeiligheidsstand, "btnVeiligheidsstand");
+            this.btnVeiligheidsstand.Name = "btnVeiligheidsstand";
+            this.btnVeiligheidsstand.UseVisualStyleBackColor = true;
+            this.btnVeiligheidsstand.Click += new System.EventHandler(this.btnVeiligheidsstand_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // grpBesturing
             // 
-            resources.ApplyResources(this.grpBesturing, "grpBesturing");
             this.grpBesturing.Controls.Add(this.btnZuid);
             this.grpBesturing.Controls.Add(this.btnNoord);
             this.grpBesturing.Controls.Add(this.btnWest);
             this.grpBesturing.Controls.Add(this.btnOost);
+            resources.ApplyResources(this.grpBesturing, "grpBesturing");
             this.grpBesturing.Name = "grpBesturing";
             this.grpBesturing.TabStop = false;
             // 
@@ -329,108 +235,79 @@ namespace GIP_Zonnevolger
             this.btnOost.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnStartDraaien_MouseUp);
             this.btnOost.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnStopDraaien_MouseUp);
             // 
+            // pnlOpties
+            // 
+            this.pnlOpties.Controls.Add(this.grpBesturing);
+            this.pnlOpties.Controls.Add(this.grpVeiligheid);
+            this.pnlOpties.Controls.Add(this.grpInformatie);
+            this.pnlOpties.Controls.Add(this.grpWerking);
+            resources.ApplyResources(this.pnlOpties, "pnlOpties");
+            this.pnlOpties.Name = "pnlOpties";
+            this.pnlOpties.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOpties_Paint);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.instellingenToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // instellingenToolStripMenuItem
+            // 
+            this.instellingenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connectionsettingsToolStripMenuItem});
+            this.instellingenToolStripMenuItem.Name = "instellingenToolStripMenuItem";
+            resources.ApplyResources(this.instellingenToolStripMenuItem, "instellingenToolStripMenuItem");
+            this.instellingenToolStripMenuItem.Click += new System.EventHandler(this.instellingenToolStripMenuItem_Click);
+            // 
+            // connectionsettingsToolStripMenuItem
+            // 
+            this.connectionsettingsToolStripMenuItem.Name = "connectionsettingsToolStripMenuItem";
+            resources.ApplyResources(this.connectionsettingsToolStripMenuItem, "connectionsettingsToolStripMenuItem");
+            // 
             // pnlAfbeelding
             // 
+            this.pnlAfbeelding.Controls.Add(this.menuStrip1);
             this.pnlAfbeelding.Controls.Add(this.label4);
             this.pnlAfbeelding.Controls.Add(this.label5);
+            this.pnlAfbeelding.Controls.Add(this.txtIPadr);
             this.pnlAfbeelding.Controls.Add(this.btnZoekServer);
             this.pnlAfbeelding.Controls.Add(this.txtPoortnr);
-            this.pnlAfbeelding.Controls.Add(this.txtIPadr);
-            this.pnlAfbeelding.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.pnlAfbeelding, "pnlAfbeelding");
             this.pnlAfbeelding.Name = "pnlAfbeelding";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // btnZoekServer
-            // 
-            resources.ApplyResources(this.btnZoekServer, "btnZoekServer");
-            this.btnZoekServer.Name = "btnZoekServer";
-            this.btnZoekServer.UseVisualStyleBackColor = true;
-            this.btnZoekServer.Click += new System.EventHandler(this.btnZoekServer_Click);
-            // 
-            // txtPoortnr
-            // 
-            resources.ApplyResources(this.txtPoortnr, "txtPoortnr");
-            this.txtPoortnr.Name = "txtPoortnr";
-            // 
-            // txtIPadr
-            // 
-            resources.ApplyResources(this.txtIPadr, "txtIPadr");
-            this.txtIPadr.Name = "txtIPadr";
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // bgWorkerOntvang
-            // 
-            this.bgWorkerOntvang.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorkerOntvang_DoWork);
-            this.bgWorkerOntvang.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorkerOntvang_RunWorkerCompleted);
             // 
             // frmHoofd
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.pnlAfbeelding);
-            this.Controls.Add(this.pnlBesturing);
             this.Controls.Add(this.pnlOpties);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmHoofd";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.pnlOpties.ResumeLayout(false);
-            this.grpVeiligheid.ResumeLayout(false);
-            this.grpGevoeligheid.ResumeLayout(false);
-            this.grpGevoeligheid.PerformLayout();
-            this.grpInformatie.ResumeLayout(false);
-            this.grpSpanningen.ResumeLayout(false);
-            this.grpSpanningen.PerformLayout();
-            this.grpTijdBeweging.ResumeLayout(false);
-            this.grpTijdBeweging.PerformLayout();
+            this.Load += new System.EventHandler(this.frmHoofd_Load);
             this.grpWerking.ResumeLayout(false);
             this.grpWerking.PerformLayout();
-            this.pnlBesturing.ResumeLayout(false);
+            this.grpInformatie.ResumeLayout(false);
+            this.grpInformatie.PerformLayout();
+            this.grpVeiligheid.ResumeLayout(false);
             this.grpBesturing.ResumeLayout(false);
+            this.pnlOpties.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.pnlAfbeelding.ResumeLayout(false);
             this.pnlAfbeelding.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlOpties;
+        private System.ComponentModel.BackgroundWorker bgWorkerOntvang;
         private System.Windows.Forms.GroupBox grpWerking;
-        private System.Windows.Forms.Panel pnlBesturing;
-        private System.Windows.Forms.Panel pnlAfbeelding;
         private System.Windows.Forms.RadioButton rdbAutomatisch;
         private System.Windows.Forms.RadioButton rdbManueel;
-        private System.Windows.Forms.GroupBox grpBesturing;
-        private System.Windows.Forms.Button btnZuid;
-        private System.Windows.Forms.Button btnNoord;
-        private System.Windows.Forms.Button btnWest;
-        private System.Windows.Forms.Button btnOost;
+        private System.Windows.Forms.MaskedTextBox txtIPadr;
         private System.Windows.Forms.GroupBox grpInformatie;
-        private System.Windows.Forms.GroupBox grpSpanningen;
-        private System.Windows.Forms.GroupBox grpTijdBeweging;
-        private System.Windows.Forms.Label lblTijd2;
-        private System.Windows.Forms.Label lblTijd;
-        private System.Windows.Forms.TextBox txtTijd;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblV4;
-        private System.Windows.Forms.Label lblV3;
-        private System.Windows.Forms.Label lblV2;
-        private System.Windows.Forms.Label lblV;
         private System.Windows.Forms.Label lblWestWaarde;
         private System.Windows.Forms.Label lblOostWaarde;
         private System.Windows.Forms.Label lblZuidWaarde;
@@ -439,20 +316,22 @@ namespace GIP_Zonnevolger
         private System.Windows.Forms.Label lblOost;
         private System.Windows.Forms.Label lblZuid;
         private System.Windows.Forms.Label lblNoord;
-        private System.Windows.Forms.GroupBox grpWindsnelheid;
+        private System.Windows.Forms.TextBox txtPoortnr;
+        private System.Windows.Forms.Button btnZoekServer;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox grpVeiligheid;
         private System.Windows.Forms.Button btnVeiligheidsstand;
-        private System.Windows.Forms.GroupBox grpGevoeligheid;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtGevoeligheidswaarde;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnZoekServer;
-        private System.Windows.Forms.TextBox txtPoortnr;
-        private System.Windows.Forms.MaskedTextBox txtIPadr;
-        private System.ComponentModel.BackgroundWorker bgWorkerOntvang;
+        private System.Windows.Forms.GroupBox grpBesturing;
+        private System.Windows.Forms.Button btnZuid;
+        private System.Windows.Forms.Button btnNoord;
+        private System.Windows.Forms.Button btnWest;
+        private System.Windows.Forms.Button btnOost;
+        private System.Windows.Forms.Panel pnlOpties;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem instellingenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem connectionsettingsToolStripMenuItem;
+        private System.Windows.Forms.Panel pnlAfbeelding;
     }
 }
 

@@ -30,11 +30,11 @@ namespace GIP_Zonnevolger
             //grpBesturing.Enabled = false;
             try
             {
-                Writer.WriteAsync("7");                                          //Versturen text
+                Writer.Write("7");                                          //Versturen text
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Er is een fout opgetreden bij deze aanvraag", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -44,11 +44,11 @@ namespace GIP_Zonnevolger
             grpBesturing.Enabled = true;
             try
             {
-                Writer.WriteAsync("6");                                          //Versturen text
+                Writer.Write("6");                                          //Versturen text
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Er is een fout opgetreden bij deze aanvraag", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -97,11 +97,36 @@ namespace GIP_Zonnevolger
                 string bericht;
                 try
                 {
-                    /*bericht = Reader.ReadLine();
-                    this.lblNoordWaarde.Invoke(new MethodInvoker(delegate ()
+                    bericht = Reader.ReadLine();
+                    if (bericht == null) continue;
+                    if (bericht.Contains("Noord"))
                     {
-                        lblNoordWaarde.Text = bericht;
-                    }));*/
+                        this.lblNoordWaarde.Invoke(new MethodInvoker(delegate ()
+                        {
+                            lblNoordWaarde.Text = bericht.Substring(5, bericht.Length - 5);
+                        }));
+                    }
+                    if (bericht.Contains("Oost"))
+                    {
+                        this.lblOostWaarde.Invoke(new MethodInvoker(delegate ()
+                        {
+                            lblOostWaarde.Text = bericht.Substring(4, bericht.Length - 4);
+                        }));
+                    }
+                    if (bericht.Contains("Zuid"))
+                    {
+                        this.lblZuidWaarde.Invoke(new MethodInvoker(delegate ()
+                        {
+                            lblZuidWaarde.Text = bericht.Substring(4, bericht.Length - 4);
+                        }));
+                    }
+                    if (bericht.Contains("West"))
+                    {
+                        this.lblWestWaarde.Invoke(new MethodInvoker(delegate ()
+                        {
+                            lblWestWaarde.Text = bericht.Substring(4, bericht.Length - 4);
+                        }));
+                    }
                 }
                 catch
                 {
@@ -173,6 +198,21 @@ namespace GIP_Zonnevolger
             {
                 MessageBox.Show("Er is een fout opgetreden bij deze aanvraag", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void pnlOpties_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void instellingenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmHoofd_Load(object sender, EventArgs e)
+        {
 
         }
     }
