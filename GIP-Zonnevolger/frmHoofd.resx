@@ -237,6 +237,126 @@
   <data name="grpInformatie.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
+  <data name="&gt;&gt;lblOostWaarde.Name" xml:space="preserve">
+    <value>lblOostWaarde</value>
+  </data>
+  <data name="&gt;&gt;lblOostWaarde.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOostWaarde.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblOostWaarde.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblWestWaarde.Name" xml:space="preserve">
+    <value>lblWestWaarde</value>
+  </data>
+  <data name="&gt;&gt;lblWestWaarde.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWestWaarde.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblWestWaarde.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblNoord.Name" xml:space="preserve">
+    <value>lblNoord</value>
+  </data>
+  <data name="&gt;&gt;lblNoord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNoord.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblNoord.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblNoordWaarde.Name" xml:space="preserve">
+    <value>lblNoordWaarde</value>
+  </data>
+  <data name="&gt;&gt;lblNoordWaarde.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNoordWaarde.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblNoordWaarde.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblWest.Name" xml:space="preserve">
+    <value>lblWest</value>
+  </data>
+  <data name="&gt;&gt;lblWest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWest.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblWest.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblZuidWaarde.Name" xml:space="preserve">
+    <value>lblZuidWaarde</value>
+  </data>
+  <data name="&gt;&gt;lblZuidWaarde.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblZuidWaarde.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblZuidWaarde.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblOost.Name" xml:space="preserve">
+    <value>lblOost</value>
+  </data>
+  <data name="&gt;&gt;lblOost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOost.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblOost.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblZuid.Name" xml:space="preserve">
+    <value>lblZuid</value>
+  </data>
+  <data name="&gt;&gt;lblZuid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblZuid.Parent" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;lblZuid.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grpInformatie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 96</value>
+  </data>
+  <data name="grpInformatie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 135</value>
+  </data>
+  <data name="grpInformatie.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpInformatie.Text" xml:space="preserve">
+    <value>Waarden per windrichting (enkel bij automatisch)</value>
+  </data>
+  <data name="&gt;&gt;grpInformatie.Name" xml:space="preserve">
+    <value>grpInformatie</value>
+  </data>
+  <data name="&gt;&gt;grpInformatie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpInformatie.Parent" xml:space="preserve">
+    <value>pnlOpties</value>
+  </data>
+  <data name="&gt;&gt;grpInformatie.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="lblOostWaarde.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -477,30 +597,6 @@
   <data name="&gt;&gt;lblZuid.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="grpInformatie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 96</value>
-  </data>
-  <data name="grpInformatie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 135</value>
-  </data>
-  <data name="grpInformatie.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="grpInformatie.Text" xml:space="preserve">
-    <value>Informatie</value>
-  </data>
-  <data name="&gt;&gt;grpInformatie.Name" xml:space="preserve">
-    <value>grpInformatie</value>
-  </data>
-  <data name="&gt;&gt;grpInformatie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpInformatie.Parent" xml:space="preserve">
-    <value>pnlOpties</value>
-  </data>
-  <data name="&gt;&gt;grpInformatie.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="txtPoortnr.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 77</value>
   </data>
@@ -585,24 +681,6 @@
   <data name="grpVeiligheid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="btnVeiligheidsstand.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnVeiligheidsstand.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 17</value>
-  </data>
-  <data name="btnVeiligheidsstand.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btnVeiligheidsstand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>579, 62</value>
-  </data>
-  <data name="btnVeiligheidsstand.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnVeiligheidsstand.Text" xml:space="preserve">
-    <value>Veiligheidsstand</value>
-  </data>
   <data name="&gt;&gt;btnVeiligheidsstand.Name" xml:space="preserve">
     <value>btnVeiligheidsstand</value>
   </data>
@@ -639,6 +717,36 @@
   <data name="&gt;&gt;grpVeiligheid.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btnVeiligheidsstand.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnVeiligheidsstand.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="btnVeiligheidsstand.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnVeiligheidsstand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 62</value>
+  </data>
+  <data name="btnVeiligheidsstand.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnVeiligheidsstand.Text" xml:space="preserve">
+    <value>Veiligheidsstand</value>
+  </data>
+  <data name="&gt;&gt;btnVeiligheidsstand.Name" xml:space="preserve">
+    <value>btnVeiligheidsstand</value>
+  </data>
+  <data name="&gt;&gt;btnVeiligheidsstand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVeiligheidsstand.Parent" xml:space="preserve">
+    <value>grpVeiligheid</value>
+  </data>
+  <data name="&gt;&gt;btnVeiligheidsstand.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -668,6 +776,81 @@
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnZuid.Name" xml:space="preserve">
+    <value>btnZuid</value>
+  </data>
+  <data name="&gt;&gt;btnZuid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZuid.Parent" xml:space="preserve">
+    <value>grpBesturing</value>
+  </data>
+  <data name="&gt;&gt;btnZuid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnNoord.Name" xml:space="preserve">
+    <value>btnNoord</value>
+  </data>
+  <data name="&gt;&gt;btnNoord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNoord.Parent" xml:space="preserve">
+    <value>grpBesturing</value>
+  </data>
+  <data name="&gt;&gt;btnNoord.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnWest.Name" xml:space="preserve">
+    <value>btnWest</value>
+  </data>
+  <data name="&gt;&gt;btnWest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnWest.Parent" xml:space="preserve">
+    <value>grpBesturing</value>
+  </data>
+  <data name="&gt;&gt;btnWest.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnOost.Name" xml:space="preserve">
+    <value>btnOost</value>
+  </data>
+  <data name="&gt;&gt;btnOost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOost.Parent" xml:space="preserve">
+    <value>grpBesturing</value>
+  </data>
+  <data name="&gt;&gt;btnOost.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpBesturing.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="grpBesturing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 6</value>
+  </data>
+  <data name="grpBesturing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 225</value>
+  </data>
+  <data name="grpBesturing.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="grpBesturing.Text" xml:space="preserve">
+    <value>Besturing</value>
+  </data>
+  <data name="&gt;&gt;grpBesturing.Name" xml:space="preserve">
+    <value>grpBesturing</value>
+  </data>
+  <data name="&gt;&gt;grpBesturing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBesturing.Parent" xml:space="preserve">
+    <value>pnlOpties</value>
+  </data>
+  <data name="&gt;&gt;grpBesturing.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnZuid.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -736,7 +919,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnWest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 157</value>
+    <value>5, 157</value>
   </data>
   <data name="btnWest.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 64</value>
@@ -766,7 +949,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnOost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 157</value>
+    <value>181, 157</value>
   </data>
   <data name="btnOost.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 64</value>
@@ -788,33 +971,6 @@
   </data>
   <data name="&gt;&gt;btnOost.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="grpBesturing.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="grpBesturing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 6</value>
-  </data>
-  <data name="grpBesturing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 225</value>
-  </data>
-  <data name="grpBesturing.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="grpBesturing.Text" xml:space="preserve">
-    <value>Besturing</value>
-  </data>
-  <data name="&gt;&gt;grpBesturing.Name" xml:space="preserve">
-    <value>grpBesturing</value>
-  </data>
-  <data name="&gt;&gt;grpBesturing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpBesturing.Parent" xml:space="preserve">
-    <value>pnlOpties</value>
-  </data>
-  <data name="&gt;&gt;grpBesturing.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="pnlOpties.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -843,18 +999,6 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>170, 17</value>
   </metadata>
-  <data name="connectionsettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="connectionsettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Connection</value>
-  </data>
-  <data name="instellingenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
-  </data>
-  <data name="instellingenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Instellingen</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -878,6 +1022,18 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="instellingenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="instellingenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instellingen</value>
+  </data>
+  <data name="connectionsettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="connectionsettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Connection</value>
   </data>
   <data name="pnlAfbeelding.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

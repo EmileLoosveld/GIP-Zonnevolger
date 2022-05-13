@@ -280,7 +280,7 @@ namespace GIP_Zonnevolger
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.Menu;
             this.Controls.Add(this.pnlAfbeelding);
             this.Controls.Add(this.pnlOpties);
             this.MainMenuStrip = this.menuStrip1;

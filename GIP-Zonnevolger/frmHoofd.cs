@@ -27,7 +27,7 @@ namespace GIP_Zonnevolger
 
         private void rdbAutomatisch_CheckedChanged(object sender, EventArgs e)
         {
-            //grpBesturing.Enabled = false;
+            grpBesturing.Enabled = false;
             try
             {
                 Writer.Write("7");                                          //Versturen text
@@ -45,6 +45,10 @@ namespace GIP_Zonnevolger
             try
             {
                 Writer.Write("6");                                          //Versturen text
+                lblNoordWaarde.Text = "Error";                              //text aanpassen wanneer in manueel
+                lblOostWaarde.Text = "Error";
+                lblZuidWaarde.Text = "Error";
+                lblWestWaarde.Text = "Error";
             }
             catch (Exception ex)
             {
@@ -57,13 +61,13 @@ namespace GIP_Zonnevolger
             //controle IP-adres
             IPAddress ipadres;
             int poortNr;
-            if (!IPAddress.TryParse(txtIPadr.Text.Replace(" ", " "), out ipadres))
+            if (!IPAddress.TryParse(txtIPadr.Text.Replace(" ", " "), out ipadres))                                  //Als IP-Adress ongeldig is.
             {
                 MessageBox.Show("Ongeldig IPAdres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtIPadr.Focus();
                 return;
             }
-            if (!int.TryParse(txtPoortnr.Text, out poortNr))
+            if (!int.TryParse(txtPoortnr.Text, out poortNr))                                                        //Als Poort ongeldig is.
             {
                 MessageBox.Show("Ongeldige poortnummer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPoortnr.Focus();
@@ -92,40 +96,43 @@ namespace GIP_Zonnevolger
 
         private void bgWorkerOntvang_DoWork(object sender, DoWorkEventArgs e)
         {
-            while (client.Connected)
+            while (client.Connected)                                                        //Als de client is verpakt
             {
                 string bericht;
                 try
                 {
                     bericht = Reader.ReadLine();
                     if (bericht == null) continue;
-                    if (bericht.Contains("Noord"))
+                    if (rdbAutomatisch.Checked)
                     {
-                        this.lblNoordWaarde.Invoke(new MethodInvoker(delegate ()
+                        if (bericht.Contains("Noord"))
                         {
-                            lblNoordWaarde.Text = bericht.Substring(5, bericht.Length - 5);
-                        }));
-                    }
-                    if (bericht.Contains("Oost"))
-                    {
-                        this.lblOostWaarde.Invoke(new MethodInvoker(delegate ()
+                            this.lblNoordWaarde.Invoke(new MethodInvoker(delegate ()                        //label noord waarde die ontvangen is geven.
+                            {
+                                lblNoordWaarde.Text = bericht.Substring(5, bericht.Length - 5);
+                            }));
+                        }
+                        if (bericht.Contains("Oost"))
                         {
-                            lblOostWaarde.Text = bericht.Substring(4, bericht.Length - 4);
-                        }));
-                    }
-                    if (bericht.Contains("Zuid"))
-                    {
-                        this.lblZuidWaarde.Invoke(new MethodInvoker(delegate ()
+                            this.lblOostWaarde.Invoke(new MethodInvoker(delegate ()
+                            {
+                                lblOostWaarde.Text = bericht.Substring(4, bericht.Length - 4);
+                            }));
+                        }
+                        if (bericht.Contains("Zuid"))
                         {
-                            lblZuidWaarde.Text = bericht.Substring(4, bericht.Length - 4);
-                        }));
-                    }
-                    if (bericht.Contains("West"))
-                    {
-                        this.lblWestWaarde.Invoke(new MethodInvoker(delegate ()
+                            this.lblZuidWaarde.Invoke(new MethodInvoker(delegate ()
+                            {
+                                lblZuidWaarde.Text = bericht.Substring(4, bericht.Length - 4);
+                            }));
+                        }
+                        if (bericht.Contains("West"))
                         {
-                            lblWestWaarde.Text = bericht.Substring(4, bericht.Length - 4);
-                        }));
+                            this.lblWestWaarde.Invoke(new MethodInvoker(delegate ()
+                            {
+                                lblWestWaarde.Text = bericht.Substring(4, bericht.Length - 4);
+                            }));
+                        }
                     }
                 }
                 catch
@@ -141,6 +148,7 @@ namespace GIP_Zonnevolger
             btnZoekServer.Enabled = true;
         }
 
+        //Waardes serieel versturen om de microcontroller gegevens te geven.
         private void btnVeiligheidsstand_Click(object sender, EventArgs e)
         {
             try
